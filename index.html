@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MD TAFSHEEN — Home</title><link rel="stylesheet" href="style.css"></head>
+<body class="page-home">
+
+<header class="header">
+  <a class="brand" href="index.html">
+    <div class="logo">MT</div>
+    <div style="line-height:1"><div style="font-weight:900">MD TAFSHEEN</div><div class="small">AI & Web Developer</div></div>
+  </a>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="skills.html">💻 Skills</a>
+    <a href="certificates.html">📜 Certificates</a>
+    <a href="courses.html">📘 Courses</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="home-hero card">
+    <div class="home-left">
+      <div class="small">Hello — I'm</div>
+      <h1>MD TAFSHEEN</h1>
+      <div class="small" style="color:var(--accent2)">AI & Web Developer • Frontend Engineer</div>
+      <p class="small" style="margin-top:12px">I design AI-inspired interfaces with clean, fast, and accessible code. Scroll down or hit Get Started to see more.</p>
+      <div style="margin-top:16px;display:flex;gap:12px">
+        <button class="btn" id="getStarted">Get Started</button>
+        <a class="btn secondary" href="education.html">Education</a>
+      </div>
+      <div class="about-panel" id="homeAbout">
+        <div style="display:flex;gap:12px;align-items:center">
+          <div style="width:120px;height:120px;border-radius:12px;overflow:hidden;border:4px solid rgba(255,255,255,0.06)">
+            <img src="profile.svg" alt="profile" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div>
+            <h3 style="color:var(--accent2);margin-bottom:6px">About Me</h3>
+            <p class="small">I build modern web apps and bring machine intelligence into interfaces. Focus: React, Python, ML basics, and UI/UX.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="home-right">
+      <div class="profile-frame card">
+        <img src="C:/Users/ACER/Downloads/MD_TAFSHEEN_pro_portfolio/certs/b_mujhe_isme_se_right_ (1).png" alt="MD TAFSHEEN">
+      </div>
+      <div style="margin-top:14px;text-align:center">
+        <div style="font-weight:800">MD TAFSHEEN</div>
+        <div class="small" style="color:var(--muted)">Punjab,Phagwara,India • Open to remote</div>
+      </div>
+    </aside>
+  </section>
+  <section class="card" style="margin-top:20px">
+    <h2 class="section-title">Quick Projects</h2>
+    <div class="grid-3" style="gap:12px">
+      <div class="card">Portfolio Website — UI & performance</div>
+
+      <div class="card">ML Demo — image classifier</div>
+    </div>
+  </section>
+</main>
+<script>
+document.getElementById('getStarted').addEventListener('click', function(){
+  var p = document.getElementById('homeAbout');
+  if(p.style.display === 'block'){ p.style.display = 'none'; }
+  else { p.style.display = 'block'; p.scrollIntoView({behavior:'smooth'}); }
+});
+</script>
+</body></html>

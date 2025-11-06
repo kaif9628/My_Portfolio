@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="page-education">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | Kaif Khan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== AIESHA THEME EDUCATION PAGE ===== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0f19;
+      color: #071026;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0f172a;
+      padding: 15px 50px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .logo {
+      background: linear-gradient(135deg, #8b5cf6, #6366f1);
+      color: #fff;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+    }
+
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #8b5cf6;
+      text-shadow: 0 0 8px #8b5cf6;
+    }
+
+    /* ===== Education Section ===== */
+    .education-section {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .education-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #c084fc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
+    }
+
+    .edu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      box-shadow: 0 10px 40px rgba(2, 6, 12, 0.6);
+  overflow: hidden
+    }
+
+    .edu-box {
+      background: rgba(30, 41, 59, 0.8);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .edu-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+    }
+
+    .edu-box h3 {
+      color: #a78bfa;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .edu-box p {
+      font-size: 0.95rem;
+      color: #d1d5db;
+      margin: 5px 0;
+    }
+
+    .edu-box button {
+      margin-top: 12px;
+      background: linear-gradient(90deg, #8b5cf6, #6366f1);
+      border: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .edu-box button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #8b5cf6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <a class="brand" href="index.html">
+      <div class="logo">MT</div>
+      <div>
+        <div style="font-weight:900;">MD TAFSHEEN</div>
+        <div style="font-size:0.8rem; opacity:0.8;">AI & Web Developer</div>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="about.html">👤 About</a>
+      <a href="education.html" class="active">🎓 Education</a>
+      <a href="skills.html">💻 Skills</a>
+      <a href="certificates.html">📜 Certificates</a>
+      <a href="courses.html">📘 Courses</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <!-- 🎓 Education Section -->
+  <section class="education-section">
+    <h2>🎓 Education Details</h2>
+
+    <div class="edu-container">
+      <div class="edu-box">
+        <h3>Current Education</h3>
+        <p><strong>Course:</strong>Lovely Professional University</p>
+        <p><strong>University:</strong> </p>
+        <p><strong>Year:</strong> 2025 – Present</p>
+      </div>
+
+      <div class="edu-box">
+        <h3>Graduation</h3>
+        <p><strong>Degree:</strong>Bachelor of Science (Mathematics)</p>
+        <p><strong>College:</strong>DR. Ram Manoher Lohia Avadh University Ayodhya (UP)</p>
+        <p><strong>Marks:</strong> 8.1 CGPA</p>
+        <button onclick="window.open('C:/Users/ACER/Downloads/MD_TAFSHEEN_pro_portfolio/certs/graduation marksheet .jpeg', '_blank')">📄 View Certificate</button>
+      </div>
+
+      <div class="edu-box">
+        <h3>Intermediate</h3>
+        <p><strong>School:</strong> JR Inter College Jamon Amethi (UP) </p>
+        <p><strong>Board:</strong> UP Board</p>
+        <p><strong>Percentage:</strong> 63%</p>
+        <button onclick="window.open('C:/Users/ACER/Downloads/MD_TAFSHEEN_pro_portfolio/certs/12th marksheet.pdf', '_blank')">📄 View Certificate</button>
+      </div>
+
+      <div class="edu-box">
+        <h3>High School</h3>
+        <p><strong>School:</strong>Janta Inter College Jamon Amethi (UP) </p>
+        <p><strong>Board:</strong>UP Board</p>
+        <p><strong>Percentage:</strong> 82%</p>
+        <button onclick="window.open('C:/Users/ACER/Downloads/MD_TAFSHEEN_pro_portfolio/certs/10th marksheet.pdf', '_blank')">📄 View Certificate</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

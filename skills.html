@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Skills — MD TAFSHEEN</title><link rel="stylesheet" href="style.css"></head>
+<body class="page-skills">
+
+<header class="header">
+  <a class="brand" href="index.html">
+    <div class="logo">MT</div>
+    <div style="line-height:1"><div style="font-weight:900">MD TAFSHEEN</div><div class="small">AI & Web Developer</div></div>
+  </a>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About</a>
+    <a href="education.html">🎓 Education</a>
+    <a href="skills.html">💻 Skills</a>
+    <a href="certificates.html">📜 Certificates</a>
+    <a href="courses.html">📘 Courses</a>
+    <a href="contact.html">📞 Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1>💻 Skills</h1>
+    <div class="grid-3">
+      <div class="card">
+        <div class="circ" id="s1"><div class="num">0%</div></div>
+        <div class="small" style="margin-top:8px">HTML & CSS</div>
+      </div>
+      <div class="card">
+        <div class="circ" id="s2"><div class="num">0%</div></div>
+        <div class="small" style="margin-top:8px">JavaScript</div>
+      </div>
+      <div class="card">
+        <div class="circ" id="s3"><div class="num">0%</div></div>
+        <div class="small" style="margin-top:8px">React</div>
+      </div>
+      <div class="card">
+        <div class="circ" id="s4"><div class="num">0%</div></div>
+        <div class="small" style="margin-top:8px">Python</div>
+      </div>
+      <div class="card">
+        <div class="circ" id="s5"><div class="num">0%</div></div>
+        <div class="small" style="margin-top:8px">Machine Learning</div>
+      </div>
+      <div class="card">
+        <div class="circ" id="s6"><div class="num">0%</div></div>
+        <div class="small" style="margin-top:8px">UI/UX</div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+function animateCirc(id,perc,d){d=d||900; var el=document.getElementById(id); var num=el.querySelector('.num'); var s=null; function step(t){ if(!s) s=t; var p=Math.min((t-s)/d,1); var cur=Math.round(p*perc); el.style.background='conic-gradient(var(--accent1) 0deg, var(--accent1) '+(cur*3.6)+'deg, rgba(255,255,255,0.04) '+(cur*3.6)+'deg)'; num.textContent=cur+'%'; if(p<1) requestAnimationFrame(step); } requestAnimationFrame(step); }
+document.addEventListener('DOMContentLoaded', function(){ animateCirc('s1',95); animateCirc('s2',90); animateCirc('s3',82); animateCirc('s4',78); animateCirc('s5',72); animateCirc('s6',85); });
+</script>
+</body></html>
